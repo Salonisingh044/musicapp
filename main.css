@@ -1,0 +1,308 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+	color: cadetblue
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1,h3 {
+    border: 0;
+    margin: 0;
+    color: azure;
+    margin-bottom: 17px;
+}
+
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #BBB;
+}
+
+.welcome-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("http://cdn.wallpapersafari.com/85/7/Wg7xX6.png");
+    background-size:cover;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+     font-family: Open Sans;
+	  background : url("http://www.youlivenow.tv/sites/default/files/headphones%20music%20photography%20black%20background%20akg%201920x1200%20wallpaper_www.wallpaperhi.com_44.jpg");
+	      background-size: 100% 100%;
+}
+
+.main header {
+    height: 80px;
+   
+    padding: 1rem;
+    color: #FFF;
+	
+	
+}
+
+.main .content {
+    flex:1;
+   
+	
+}
+
+.main footer {
+    height: 80px;
+    background-color: #282828;
+    padding-top: 1rem;
+	margin-top: 222px;
+	
+}
+#mood-chill{
+     margin-top: 180px;
+    margin-left: 561px;
+}
+#mood-rock{
+       margin-top: -324px;
+    margin-left: 774px
+}
+#mood-pop{
+margin-left: 999px;
+    margin-top: 38px;
+}
+#mood-alternative{
+        margin-bottom: 169px;
+    margin-left: 779px;;
+}
+
+.player-buttons {
+    display:flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right.floated {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.progress-wrapper {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper span {
+    color: #959595;
+}
+
+.player-progress {
+    height: 8px;
+    width: 700px;
+    background-color: #3d3d3d;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.progress-filled {
+    background-color: #959595;
+    height: 8px;
+    border-radius: 4px;
+    width: 0;
+
+}
+
+.main .content {
+    width: 800px;
+    margin: 2rem auto;
+}
+
+.list-headers {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.list-headers > div {
+    width: 150px;
+    display: inline-block;
+}
+
+.list-headers > div:first-child {
+    width: 330px;
+}
+
+.list-headers > div:last-child {
+    text-align: right;
+}
+
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.song > span {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+}
+.song > span:first-child {
+    width: 330px;
+}
+
+.song .song-duration {
+    text-align: right;
+}
+
+.song-list .song:hover {
+    background-color: #282828;
+}
+
+
+.song-length {
+    text-align: right;
+}
+
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+   position: absolute;
+    bottom: 0;
+    margin-left: 61px;
+    margin-bottom: -218px;
+    display: flex;
+	
+}
+.current-song-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+table.dataTable{
+    
+    color: black;
+    
+}
+
+table.dataTable.no-footer {
+    border-bottom: 0 !important;
+}
+
+table.dataTable tbody tr {
+    webkit-transition:color .1s ease-out, background 0.3s ease-in;
+      /* ...and now override with proper CSS property */
+      transition:color .1s ease-out, background 0.3s ease-in;
+}
+table.dataTable tbody{
+    background-color: #e0e0e0 !important;
+}   
+
+table.dataTable thead{
+
+    background-color:initial;
+    border:1px solid #64b5f6 !important;
+    }
+
+
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+h1 {
+
+    font-family: Open Sans;
+    font-size: 40px;
+}        
+
+#loading{
+
+    margin-top:50px;
+
+}
+
+ .player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+} 
+
+
+.mood-list{
+
+       
+        width : 150px;
+        height: 150px;
+        color:black;
+		cursor: pointer;
+    
+}
+
+.mood-list-img{ 
+        width : 100%;
+        height: 100%;
+        }
+
+.controls{
+
+    margin-bottom: 0;
+}      
+
+
+#back {
+
+
+      margin-left: 984px;
+    margin-bottom: -42p
+}
+
+#progress-filled  {
+	
+	background-color:#959595;
+	height: 8px;
+	border-radius: 4px;
+	
+}	
+
