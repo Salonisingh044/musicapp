@@ -8,7 +8,7 @@ var alternative = 0;
 var rock = 0;
 var chill = 0;
 
- 
+<!---------function for toggle song------------------> 
 
 function toggleSong(){
 		var song = document.querySelector('audio');
@@ -23,6 +23,7 @@ function toggleSong(){
         }
 	
 	    }
+<!---------------------current time and progress bar---------------------------------->       
   function fancyTimeFormat(time)
               {   
                 // Hours, minutes and seconds
@@ -53,7 +54,7 @@ function toggleSong(){
                 $('.time-elapsed').text(currentTime);
                 $('.song-duration').text(duration);
                 }
-
+<!------------------ variables for song--------------------------------------->
 var songs_pop = [{
 					   'name': 'Tamma Tamma',
 					   'artist': 'Neha Kakkar, Monali Thakur',
@@ -198,7 +199,7 @@ var songs_chill = [{
 						'image': 'song11.jpg'
                     }]
 
-
+<!----------- song detail--------->
         function addSongNameClickEvent(songObj,position) {
 				var id = '#song' + position;
 				var songName = songObj.fileName;   
@@ -232,14 +233,14 @@ var songs_chill = [{
 		
 
 
-
+<!-------------current song detail----------------->
 				
 		function changeCurrentSongDetails(songObj) {
 		    $('.current-song-image').attr('src','img/' + songObj.image)
 			$('.current-song-name').text(songObj.name)
 			$('.current-song-album').text(songObj.album)
 		}
-	
+<!-----------welcome screen button---------->	
 	
     $('.welcome-screen button').on('click', function() {
         var name = $('#name-input').val();
@@ -414,7 +415,44 @@ var songs_chill = [{
         
     })
 
-					
+	
+
+<!-------------------volume slider ka code---------------------------->
+    //////////////////////////////volumeslider function///////////////////////////////
+function setvolume() 
+{						
+	var song = document.querySelector('audio');
+	song.volume = slider.value/100;
+}
+// increase and decrease the volume by volume slider		
+$('#slider').on('mousemove', function() 
+{								
+	setvolume();
+});
+
+/////////////////increase the volume of sidebar on click/////////////////
+$('#slider').on('click', function() 
+{								
+	setvolume();
+});
+
+<!---------------------------mute unmute------------------------------->
+$('.fa-volume-up').on('click',function(){        //mute and unmute the song
+	 var audio = document.querySelector('audio');
+	 if(mute == 0){
+		 audio.muted = true;
+		 mute = 1;
+		 console.log('mute');
+		 $('.mute').removeClass('fa-volume-up').addClass('fa-volume-off');
+	 }
+	 else {
+		  audio.muted = false;
+		  mute = 0;
+		  console.log('unmute')
+		   $('.mute').removeClass('fa-volume-off').addClass('fa-volume-up');
+
+	 }
+});
 	             
 				
 					

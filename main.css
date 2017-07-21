@@ -118,7 +118,18 @@ margin-left: 999px;
     justify-content: center;
     align-items: center;
 }
-
+#progressBar { 
+    
+    width: 208px;
+    height: 20px;
+    margin-left: 115px;
+    margin-top: -23px;
+}
+span#progress {
+   background-color:#ff0000; // red
+   height:2px;
+   display:inline-block;
+}
 .progress-wrapper span {
     color: #959595;
 }
@@ -304,5 +315,20 @@ h1 {
 	height: 8px;
 	border-radius: 4px;
 	
-}	
+}
+.volume
+{
+        color: black !important;
+    margin-left: 124px;
+    position: absolute;
+    margin-top: -76px;
+    -webkit-appearance: slider-vertical;
+    height: 96px;
+}
+.mute
+{
+        position: absolute;
+    margin-left: 183px;
+    margin-top: 28px;
+}
 
